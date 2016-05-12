@@ -1,5 +1,3 @@
-require_relative 'lib/file_reader'
-
 # For getting the difference in package names between two Ubuntu distribution
 # using Ubuntu manifest file
 class DistDiff
@@ -42,3 +40,4 @@ class DistDiff
   end
 end
 
+require 'dist_diff/file_reader'
