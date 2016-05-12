@@ -5,10 +5,20 @@ For getting the difference of package names between two Ubuntu distributions usi
 
 It will be helpful to convert a full Kubuntu installation to Ubuntu or vice-versa or similar other case.
 
+Installation
+------------
+Install gem with
+
+```ruby
+gem install dist_diff
+```
+
 Usage in Ruby program or irb
 ----------------------------
 
 ```ruby
+require 'dist_diff'
+
 dist_diff = DistDiff.new('kubuntu-15.10-desktkop-amd64.manifest', 'ubuntu-15.10-desktkop-amd64.manifest')
 dist_diff.extra_packages # To get the package names in Ubuntu not in Kubuntu
 dist_diff.reverse_extra_packages # To get the reverse list, that is extra packages in Kubuntu
