@@ -13,6 +13,15 @@ Install gem with
 gem install dist_diff
 ```
 
+Usage of the executable
+------------------------
+From any command line client use this pattern
+
+```bash
+dist_diff from_ubuntu_manifest to_ubuntu_manifest
+```
+Where `from_ubuntu_manifest` is the manifest file of your current Ubuntu derivative and `to_ubuntu_manifest` is the derivative you want to switch to.
+
 Usage in Ruby program or irb
 ----------------------------
 
@@ -26,8 +35,8 @@ dist_diff.reverse_extra_packages # To get the reverse list, that is extra packag
 
 TODO
 ----
-1. Implement a command line helper
-2. Implement fetching manifest file from Internet
+1. Interatively ask user about the derivatives and
+2. Use Internet to fetch the manifest files of Ubuntu
 
 Disclaimer
 -----------
