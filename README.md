@@ -1,6 +1,8 @@
 DistDiff
 ========
 
+[![Gem Version](https://badge.fury.io/rb/dist_diff.svg)](https://badge.fury.io/rb/dist_diff)
+
 For getting the difference of package names between two Ubuntu distributions using Ubuntu manifest file.
 
 It will be helpful to convert a full Kubuntu installation to Ubuntu or vice-versa or similar other case.
