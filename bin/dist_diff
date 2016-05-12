@@ -1,0 +1,32 @@
+#!/usr/bin/env ruby
+
+require 'dist_diff'
+
+def parse_args(args)
+  if args.length < 2
+    show_correct_usage
+  else
+    setup_source_dest(*args)
+    calculate_differences
+    show_differences
+  end
+end
+
+def show_correct_usage
+  puts "Usage: dist_diff from_ubuntu_manifest to_ubuntu_manifest"
+end
+
+def setup_source_dest(from, to)
+  @source_manifest = from
+  @dest_manifest = to
+end
+
+def calculate_differences
+  @pkg_diff = DistDiff.new(@source_manifest, @dest_manifest).extra_packages
+end
+
+def show_differences
+  puts @pkg_diff.join(' ')
+end
+
+parse_args(ARGV)
