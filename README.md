@@ -2,6 +2,7 @@ DistDiff
 ========
 
 [![Gem Version](https://badge.fury.io/rb/dist_diff.svg)](https://badge.fury.io/rb/dist_diff)
+[![Code Climate](https://codeclimate.com/github/AnwarShah/dist_diff/badges/gpa.svg)](https://codeclimate.com/github/AnwarShah/dist_diff)
 
 For getting the difference of package names between two Ubuntu distributions using Ubuntu manifest file.
 
