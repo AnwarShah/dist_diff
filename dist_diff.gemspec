@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'dist_diff'
-  s.version     = '0.2'
+  s.version     = '0.3'
   s.date        = '2016-05-12'
   s.summary     = "A gem for finding the packages need to be installed to switch Ubuntu derivatives"
   s.description = "A simple gem to extract the differences of package names between Ubuntu derivatives so that it becomes easy to switch from one Ubuntu derivative to another"
