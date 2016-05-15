@@ -6,7 +6,9 @@ Gem::Specification.new do |s|
   s.description = "A simple gem to extract the differences of package names between Ubuntu derivatives so that it becomes easy to switch from one Ubuntu derivative to another"
   s.authors     = ["Mohammad Anwar Shah"]
   s.email       = 'mohammadanwarshah@gmail.com'
-  s.files       = ["lib/dist_diff.rb", "lib/dist_diff/file_reader.rb", "bin/dist_diff"]
+  s.files       = `git ls-files`.split("\n")
+  s.test_files  = `git ls-files -- spec/*`.split("\n")
+  s.required_ruby_version = '>= 1.9.1'
   s.executables << 'dist_diff'
   s.homepage    =
     'http://rubygems.org/gems/dist_diff'
